@@ -1,7 +1,10 @@
 :root{
   --main-green: #47d583;
   --white: #fff;
+  --Ligt-Grey: #f7f7f7;
 
+  --margin-buttom: 8rem;
+  --margin-grid: 6rem;
 }
 .clearfix::after,
 .clearfix::before{
@@ -9,6 +12,45 @@
   display: table;
   clear: both;
 }
+
+/* ---------------------------- */
+      /* Global*/
+/* ---------------------------- */
+[id^=section-]{
+  /* background-color: orange; */
+  margin-top: 5rem;
+  padding: 4rem 0;
+}
+h2{
+  text-align: center;
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: .3rem;
+  word-spacing: .2rem;
+  margin-bottom: 7rem;
+}
+h2::after{
+  content: "";
+  display: block;
+  background-color: var(--main-green);
+  height: .2rem;
+  width: 10rem;
+  margin: 0 auto;
+}
+h3{
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.btn-noshake{
+  display: inline-block;
+  transition: translateY .2s;
+}
+
+
+/* ---------------------------- */
+      /* Start-up */
+/* ---------------------------- */
 *::after,
 *::before{
   margin: 0;
@@ -37,8 +79,8 @@ header{
   height: 95vh;
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); */
   position: relative;
 }
 .header-text{
@@ -50,6 +92,9 @@ header{
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.header-text h1{
+  margin: 0;
+}
 .header-text--top{
   display: block;
   font-weight: 300;
@@ -60,7 +105,7 @@ header{
   font-weight: 300;
   font-size: 2rem;
   letter-spacing: .2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: inline-block;
 }
 .header-btn{
@@ -72,29 +117,29 @@ header{
   padding: 1.5rem;
   letter-spacing: .1rem;
   border-radius: 5rem;
-  transition: all .3s;
   display: inline-block;
 }
-.header-btn:hover{
+.btn-noshake:hover .header-btn{
   transform: translateY(-.5rem);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
   background-color: var(--main-green);
 }
+
 /* ---------------------------- */
       /* Logo and Nav */
 /* ---------------------------- */
 nav{
-  /* background-color: orange; */
-  /* width: 90%;
-  margin: 0 auto; */
+  width: 90%;
+  margin: 0 auto;
 }
 .logo-img{
   height: 9rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   float: left;
 }
 nav ul{
   float: right;
+  /* margin-top: 3rem; */
 }
 nav ul li{
   display: inline-block;
@@ -108,6 +153,7 @@ nav a:visited{
   color: var(--white);
   padding: .5rem .2rem;
   letter-spacing: .1rem;
+    transition: .2s;
 }
 nav a:hover{
   border-bottom: 2px solid var(--main-green);
@@ -119,4 +165,164 @@ nav a:hover{
 }
 .login a:hover{
   border-bottom: transparent;
+}
+
+/* ---------------------------- */
+      /* Section About */
+/* ---------------------------- */
+#section-about{
+  background-color: var(--Ligt-Grey);
+}
+.section-about--mv p{
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.section-about--btn{
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+.section-about--btn a:link,
+.section-about--btn a:visited{
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--main-green);
+  padding: 1rem;
+  border-radius: .5rem;
+  letter-spacing: .1rem;
+  display: inline-block;
+  transition: all .3s;
+}
+.section-about--btn:hover a{
+    transform: translateY(-.5rem);
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .15);
+}
+.section-about--images{
+  position: relative;
+  margin-top: 1rem;
+}
+.a-img{
+    width: 55%;
+    position: absolute;
+    box-shadow: 0 .5rem 4rem rgba(0, 0, 0, .4 );
+    z-index: 10;
+    transition: all .3s;
+}
+.about-image1{
+    top: -2rem;
+    left: 0;
+}
+.about-image2{
+  top: 2rem;;
+  right: 0;
+}
+.about-image3{
+  top: 11rem;
+  left: 12%;
+}
+.a-img:hover{
+  z-index: 20;
+  transform: scale(1.2) translateY(-.5rem);
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, .5 );
+}
+.section-about--images:hover .a-img:not(:hover){
+  transform: scale(.90);
+}
+
+/* ---------------------------- */
+      /* Section About */
+/* ---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* My Grid */
+.row{
+  max-width: 114rem;
+  /* background-color: #eee; */
+  margin: 0 auto;
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.row:not(:last-child){
+  margin-bottom: var(--margin-buttom);
+}
+[class^="col-"]{
+  float: left;
+  /* background-color: red; */
+}
+[class^="col-"]:not(:last-child){
+  margin-right: var(--margin-grid);
+}
+.col-1-of-2{
+  width: calc((100% - var(--margin-grid)) /2);
+}
+.col-1-of-3{
+  width: calc((100% - 2 * var(--margin-grid))/3);
+}
+.col-2-of-3{
+  width: calc(2*((100% - 2 * var(--margin-grid))/3) + var(--margin-grid));
+}
+.col-1-of-4{
+  width: calc((100% - 3 * var(--margin-grid))/4);
+}
+.col-2-of-4{
+  width: calc(2 *((100% - 3 * var(--margin-grid))/4) + var(--margin-grid));
+}
+.col-3-of-4{
+  width: calc(3 *((100% - 3 * var(--margin-grid))/4) + 2*var(--margin-grid));
 }
