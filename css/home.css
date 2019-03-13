@@ -48,7 +48,27 @@ h3{
   display: inline-block;
   transition: translateY .2s;
 }
-
+.link--btn{
+  font-size: 1.6rem;
+  display: inline-block;
+}
+.link--btn a:link,
+.link--btn a:visited{
+  text-decoration: none;
+  color: var(--main-green);
+  border-bottom: 1px solid var(--main-green);
+  padding: 1rem .5rem;
+  letter-spacing: .1rem;
+  display: inline-block;
+  transition: all .3s;
+}
+.link--btn:hover a{
+    background-color: var(--main-green);
+    color: var(--white);
+    border-radius: .5rem;
+    transform: translateY(-.5rem);
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .15);
+}
 
 /* ---------------------------- */
       /* Start-up */
@@ -173,36 +193,21 @@ nav a:hover{
       /* Section About */
 /* ---------------------------- */
 #section-about{
+  max-width: 114rem;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill,minmax(50rem,1fr)); */
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 1rem;
+}
+.section-about{
   background-color: var(--Ligt-Grey);
-  margin-bottom: 10rem;
 }
 .section-about--mv p{
   font-size: 1.6rem;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 2rem;
-}
-.section-about--btn{
-  font-size: 1.6rem;
-  margin-top: 2rem;
-  display: inline-block;
-}
-.section-about--btn a:link,
-.section-about--btn a:visited{
-  text-decoration: none;
-  color: var(--main-green);
-  border-bottom: 1px solid var(--main-green);
-  padding: 1rem .5rem;
-  letter-spacing: .1rem;
-  display: inline-block;
-  transition: all .3s;
-}
-.section-about--btn:hover a{
-    background-color: var(--main-green);
-    color: var(--white);
-    border-radius: .5rem;
-    transform: translateY(-.5rem);
-    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .15);
 }
 .section-about--images{
   position: relative;
@@ -236,6 +241,7 @@ nav a:hover{
   transform: scale(.90);
 }
 
+
 /* ---------------------------- */
       /* Section Features */
 /* ---------------------------- */
@@ -250,7 +256,7 @@ nav a:hover{
   margin-top: -5rem;
 }
 .features-Best_Offers{
-  background-color: var(--Ligt-Grey);
+
   border-radius: 1rem;
   height: 30rem;
   perspective: 150rem;
@@ -267,13 +273,22 @@ nav a:hover{
   transition: all .9s ease;
   border-radius: 1rem;
 }
-.Best-Offers--Front{
-
-}
 .Offers-Front--img img{
   border-radius: 1rem;
   width: 100%;
   height: 25rem;
+}
+.Best_Offers--Price{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  font-size: 2rem;
+  font-weight: 400;
+  background-color: rgba(71, 213, 131, .7);
+  letter-spacing: .1rem;
+  padding: .5rem 1rem;
+  color: var(--Ligt-Grey);
+  border-radius: .7rem;
 }
 .Offers-Front--location{
   text-align: center;
@@ -291,11 +306,13 @@ nav a:hover{
   font-weight: 400;
   color: black;
 }
-/* .section-features--btn{
+.section-features--btn{
   text-align: center;
-} */
+  font-size: 1.3rem;
+}
 .Best-Offers--Back{
   background-color: var(--Ligt-Grey);
+  height: 30rem;
   text-align: left;
   transform: rotateY(180deg);
 }
