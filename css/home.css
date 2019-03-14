@@ -5,6 +5,7 @@
 
   --margin-buttom: 8rem;
   --margin-grid: 6rem;
+  --margin-grid-s: 2rem;
 }
 .clearfix::after,
 .clearfix::before{
@@ -28,6 +29,7 @@ h2{
   letter-spacing: .3rem;
   word-spacing: .2rem;
   margin-bottom: 7rem;
+  padding: 1rem 0;
 }
 h2::after{
   content: "";
@@ -153,7 +155,7 @@ nav a:visited{
   color: var(--white);
   padding: .5rem .2rem;
   letter-spacing: .1rem;
-    transition: .2s;
+  transition: .2s;
 }
 nav a:hover{
   border-bottom: 2px solid var(--main-green);
@@ -172,6 +174,7 @@ nav a:hover{
 /* ---------------------------- */
 #section-about{
   background-color: var(--Ligt-Grey);
+  margin-bottom: 10rem;
 }
 .section-about--mv p{
   font-size: 1.6rem;
@@ -187,15 +190,17 @@ nav a:hover{
 .section-about--btn a:link,
 .section-about--btn a:visited{
   text-decoration: none;
-  color: var(--white);
-  background-color: var(--main-green);
-  padding: 1rem;
-  border-radius: .5rem;
+  color: var(--main-green);
+  border-bottom: 1px solid var(--main-green);
+  padding: 1rem .5rem;
   letter-spacing: .1rem;
   display: inline-block;
   transition: all .3s;
 }
 .section-about--btn:hover a{
+    background-color: var(--main-green);
+    color: var(--white);
+    border-radius: .5rem;
     transform: translateY(-.5rem);
     box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .15);
 }
@@ -232,12 +237,110 @@ nav a:hover{
 }
 
 /* ---------------------------- */
-      /* Section About */
+      /* Section Features */
 /* ---------------------------- */
 
+#section-features{
+  max-width: 114rem;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: repeat(3,1fr); */
+  grid-template-columns: repeat(auto-fill,minmax(37.3rem,1fr));
+  grid-gap: 1rem;
+  margin-top: -5rem;
+}
+.features-Best_Offers{
+  background-color: var(--Ligt-Grey);
+  border-radius: 1rem;
+  height: 30rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+.Best-Offers--Box{
+  height: 25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  transition: all .9s ease;
+  border-radius: 1rem;
+}
+.Best-Offers--Front{
 
-
-
+}
+.Offers-Front--img img{
+  border-radius: 1rem;
+  width: 100%;
+  height: 25rem;
+}
+.Offers-Front--location{
+  text-align: center;
+  margin-top: -1rem;
+}
+.Offers-Front--location p{
+  font-size: 1.6rem;
+  font-size: 300;
+}
+.Offers-Front--location i{
+  margin-right: -1rem;
+}
+.Location{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: black;
+}
+/* .section-features--btn{
+  text-align: center;
+} */
+.Best-Offers--Back{
+  background-color: var(--Ligt-Grey);
+  text-align: left;
+  transform: rotateY(180deg);
+}
+.features-Best_Offers:hover .Best-Offers--Front{
+  transform: rotateY(-180deg);
+}
+.features-Best_Offers:hover .Best-Offers--Back{
+  transform: rotateY(0);
+}
+.Best-Offers--Back li{
+  list-style-type: none;
+  margin-top: 2rem;
+  text-align: center;
+}
+.Back-info span{
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+}
+.fas{
+  color: var(--main-green);
+  font-size: 2rem;
+  padding-right: 2rem;
+}
+.section-about--btn{
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+.section-features--btn a:link,
+.section-features--btn a:visited{
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--main-green);
+  padding: 1rem;
+  border-radius: .5rem;
+  letter-spacing: .1rem;
+  display: inline-block;
+  transition: all .3s;
+}
+.section-features--btn:hover a{
+    transform: translateY(-.5rem);
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .15);
+}
 
 
 
@@ -325,4 +428,29 @@ nav a:hover{
 }
 .col-3-of-4{
   width: calc(3 *((100% - 3 * var(--margin-grid))/4) + 2*var(--margin-grid));
+}
+
+
+/* My Grid */
+.row2{
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row2::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.row2:not(:last-child){
+  margin-bottom: var(--margin-buttom);
+}
+[class^="coli-"]{
+  float: left;
+  /* background-color: red; */
+}
+[class^="coli-"]:not(:last-child){
+  margin-right: var(--margin-grid-s);
+}
+.coli-1-of-3{
+  width: calc((100% - 2 * var(--margin-grid-s))/3);
 }
