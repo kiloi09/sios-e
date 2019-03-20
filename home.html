@@ -22,7 +22,7 @@
         <li class="animation-bot"><a href="#s-section-about">About us</a></li>
         <li class="animation-bot"><a href="#">Our Team</a></li>
         <li class="animation-bot"><a href="#s-section-form">Contact Us</a></li>
-        <li class="login"><a href="#">Log In!</a></li>
+        <li class="login"><a href="#login-pop">Log In!</a></li>
       </ul>
     </nav>
 
@@ -270,21 +270,21 @@
           <form class="" action="index.html" method="post">
             <fieldset class="form-name">
               <legend>First Name</legend>
-              <input type="text" name="" value="" required>
+              <input type="text" name="" value="" required class="input">
             </fieldset>
             <fieldset class="form-name">
               <legend>Last Name</legend>
-              <input type="text" name="" value="" required>
+              <input type="text" name="" value="" required class="input">
             </fieldset>
             <fieldset>
               <legend>Email Name</legend>
-              <input type="email" name="" value="" required>
+              <input type="email" name="" value="" required class="input">
             </fieldset>
             <fieldset>
               <legend>Your Message</legend>
               <textarea name="name" rows="8" cols="80" required></textarea>
             </fieldset>
-              <p class="btn-noshake"><input type="submit" name="" value="submit"></p>
+              <p class="btn-noshake"><input type="submit" name="" value="submit" class="input"></p>
           </form>
             </div>
 
@@ -301,26 +301,51 @@
   </section>
 
   <footer>
-
     <div class="footer-copy">
       <!-- <img src="./img/logo.png" alt=""> -->
     <p>&copy;Copyright 2019 All Rights Reserved by <a href="">Sios-e.com</a></p>
     </div>
-
     <div class="footer-location">
       <p class="fas fa-map-marker-alt">&nbsp;&nbsp;<span>Unit 313 Rodiza Building, Velez St. Cagayan de Oro, 9000</span></p>
     </div>
-
     <div class="footer-cntct">
     <p class="fas fa-phone-volume">&nbsp;&nbsp;<span>+639-952-223-0561</span></p>
     <p class="fas fa-envelope">&nbsp;&nbsp;<span>mikeparista@gmail.com</span></p>
-
     </div>
-
-
-
-
   </footer>
+
+
+<!-- pop-up section -->
+
+
+  <section class="login-pop" id="login-pop">
+    <div class="login-box">
+      <a href="#" class="login-close">&times;</a>
+      <form class="login-form" action="index.html" method="post">
+        <div class="input-box">
+          <input type="text" name="" value="" required>
+          <label for="">UserName:</label>
+        </div>
+
+        <div class="input-box">
+          <input type="password" name="" value="" required>
+          <label for="">Password:</label>
+        </div>
+        <input type="submit" name="" value="Login!" class="input login-btn">
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

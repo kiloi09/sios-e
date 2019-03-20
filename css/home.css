@@ -477,8 +477,8 @@ legend{
   font-size: 1.6rem;
   padding: 0 .5rem;
 }
-input[type=text],
-input[type=email]{
+.input[type=text],
+.input[type=email]{
   padding: .5rem;
   width: 80%;
   color: #777;
@@ -494,7 +494,7 @@ textarea{
   outline: none;
   font-size: 1.6rem;
 }
-input[type=submit]{
+.input[type=submit]{
   font-size: 1.6rem;
   padding: .8rem;
   text-transform: uppercase;
@@ -584,6 +584,99 @@ footer a:link{
 
 
 
+
+
+
+
+
+
+
+.login-pop{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0,.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+}
+.login-pop:target{
+  opacity: 1;
+  visibility: visible;
+}
+.login-pop:target .login-box{
+  opacity: 1;
+  transform: translate(-50%,-50%) scale(1);
+}
+.login-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  transform: translate(-50%,-50%) scale(.5);
+  padding: 10rem;
+  border: 1px solid var(--main-green);
+  background-color: rgba(0, 0, 0,.8);
+  border-radius: .5rem;
+  transition: all .4s .2s;
+}
+.input-box{
+  position: relative;
+  padding: 1rem 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.input-box input{
+  padding: 1rem 0;
+  color: var(--Ligt-Grey);
+  font-size: 1.6rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--main-green);
+  width: 90%;
+
+}
+.input-box label{
+  color: var(--white);
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 400;
+  top: 30%;
+  left: 5%;
+  transition: all .3s;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+  top: -1rem;
+  left: 5%;
+  color: var(--main-green);
+  font-size: 1.5rem;
+}
+.login-btn{
+  margin-left: 2rem;
+}
+.login-close:visited,
+.login-close:link{
+  color: var(--white);
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+.login-close:hover{
+  color: var(--main-green);
+}
+.login-close:target{
+  opacity: 0;
+  visibility: hidden;
+}
 
 
 
