@@ -11,7 +11,7 @@
 /* ---------------------------- */
       /* Global*/
 /* ---------------------------- */
-[class^=s-]{
+[id^=s-]{
   padding: 4rem 0;
   margin-top: 5rem;
 }
@@ -21,7 +21,7 @@ h2{
   font-size: 4rem;
   letter-spacing: .3rem;
   word-spacing: .2rem;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
   padding: 1rem 0;
   text-transform: uppercase;
 }
@@ -139,6 +139,7 @@ header{
 .btn-noshake:hover .header-btn{
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
   background-color: var(--main-green);
+  transition: all ease-out .2s;
 }
 
 /* ---------------------------- */
@@ -161,6 +162,26 @@ nav ul li{
   display: inline-block;
   margin: 2rem 4rem 0 0;
 }
+li.animation-bot{
+  position: relative;
+}
+li.animation-bot:hover{
+  border: none;
+}
+li.animation-bot::after{
+  content: '';
+  position: absolute;
+  width: 0rem;
+  height: .2rem;
+  left: 50%;
+  bottom: -20%;
+  background-color: var(--main-green);
+  transition: all ease-in-out .2s;
+}
+.animation-bot:hover::after{
+  width: 100%;
+  left: 0;
+}
 nav a:link,
 nav a:visited{
   text-decoration: none;
@@ -169,10 +190,6 @@ nav a:visited{
   color: var(--white);
   padding: .5rem .2rem;
   letter-spacing: .1rem;
-  transition: .2s;
-}
-nav a:hover{
-  border-bottom: 2px solid var(--main-green);
 }
 .login{
   background-color: var(--main-green);
@@ -186,14 +203,14 @@ nav a:hover{
 /* ---------------------------- */
       /* Section About */
 /* ---------------------------- */
-#section-about{
+.section-about{
   max-width: 114rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 7rem;
 }
-.s-section-about{
+#s-section-about{
   background-color: var(--Ligt-Grey);
 }
 .section-about--mv p{
@@ -239,7 +256,7 @@ nav a:hover{
       /* Section Features */
 /* ---------------------------- */
 
-#section-features{
+.section-features{
   max-width: 114rem;
   margin: 0 auto;
   display: grid;
@@ -352,14 +369,14 @@ nav a:hover{
 /* ---------------------------- */
       /* Section App */
 /* ---------------------------- */
-#section-app{
+.section-app{
   max-width: 114rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 3rem;
 }
-.s-section-app{
+#s-section-app{
   background-color: var(--Ligt-Grey);
 }
 .app-image{
@@ -387,14 +404,14 @@ nav a:hover{
 /* ---------------------------- */
       /* Section App */
 /* ---------------------------- */
-#section-testimonial{
+.section-testimonial{
   max-width: 150rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(40rem,1fr));
   grid-gap: 1rem;
 }
-.s-section-testimonial{
+#s-section-testimonial{
   background-image:
   linear-gradient(to right bottom,
   rgba(89, 90, 95, .7),
@@ -432,10 +449,10 @@ cite img {
 /* ---------------------------- */
       /* Section Message */
 /* ---------------------------- */
-.s-section-form{
+#s-section-form{
   background-color: var(--Ligt-Grey);
 }
-#section-form{
+.section-form{
   max-width: 114rem;
   margin: 0 auto;
   display: grid;
@@ -505,21 +522,24 @@ input[type=submit]{
   font-size: 3.5rem;
   padding: 0 1rem;
   margin-top: 3rem;
+  color: var(--main-green);
 }
 .fa-facebook{
-  margin-left: 6.5rem;
+  margin-left: 6rem;
+}
+.fa-facebook:hover{
   color: #3b5998;
 }
-.fa-instagram{
+.fa-instagram:hover{
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
     background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.fa-twitter-square{
+.fa-twitter-square:hover{
   color: #55aded;
 }
-.fa-google-plus-square{
+.fa-google-plus-square:hover{
   color: #dd4b3e;
 }
 
@@ -528,21 +548,38 @@ input[type=submit]{
 /* ---------------------------- */
 
 footer{
-  background-color: #292c33;
-  padding: .1rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: #464646;
   margin-top: 5rem;
   border-radius: .5rem .5rem 0 0;
 }
 footer p{
   font-size: 1.6rem;
-  padding: .2rem;
   font-weight: 400;
+  text-align: center;
 }
 footer a:visited,
 footer a:link{
   font-size: 1.6rem;
   text-decoration: none;
   color: var(--main-green);
+}
+.footer-cntct span{
+  color: #777;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.footer-cntct .fas{
+  font-size: 2.1rem;
+}
+.footer-location span{
+  color: #777;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.footer-location .fas{
+  font-size: 2.1rem;
 }
 
 
