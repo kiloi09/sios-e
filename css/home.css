@@ -191,6 +191,9 @@ nav a:visited{
   padding: .5rem .2rem;
   letter-spacing: .1rem;
 }
+.animation-bot a:hover{
+  color: var(--main-green);
+}
 .login{
   background-color: var(--main-green);
   padding: .5rem;
@@ -582,16 +585,12 @@ footer a:link{
   font-size: 2.1rem;
 }
 
+/* ---------------------------- */
+      /* Section Login */
+/* ---------------------------- */
 
-
-
-
-
-
-
-
-
-.login-pop{
+.login-pop,
+.registration-pop{
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -603,11 +602,13 @@ footer a:link{
   visibility: hidden;
   transition: all .5s;
 }
-.login-pop:target{
+.login-pop:target,
+.registration-pop:target{
   opacity: 1;
   visibility: visible;
 }
-.login-pop:target .login-box{
+.login-pop:target .login-box,
+.registration-pop:target .login-box{
   opacity: 1;
   transform: translate(-50%,-50%) scale(1);
 }
@@ -617,7 +618,7 @@ footer a:link{
   left: 50%;
   width: 20%;
   transform: translate(-50%,-50%) scale(.5);
-  padding: 10rem;
+  padding: 5rem 20rem;;
   border: 1px solid var(--main-green);
   background-color: rgba(0, 0, 0,.8);
   border-radius: .5rem;
@@ -657,9 +658,13 @@ footer a:link{
   color: var(--main-green);
   font-size: 1.5rem;
 }
-.login-btn{
-  margin-left: 2rem;
+.login-btn,
+.register-btn{
+  text-align: center;
 }
+/* input[type="submit"]{
+  width: 100%;
+} */
 .login-close:visited,
 .login-close:link{
   color: var(--white);
@@ -676,6 +681,16 @@ footer a:link{
 .login-close:target{
   opacity: 0;
   visibility: hidden;
+}
+.form-text{
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 400;
+}
+.form-text a:visited,
+.form-text a:link{
+  color: var(--main-green);
+  text-decoration: none;
 }
 
 
