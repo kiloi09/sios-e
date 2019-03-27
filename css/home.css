@@ -182,8 +182,8 @@ li.animation-bot::after{
   width: 100%;
   left: 0;
 }
-nav a:link,
-nav a:visited{
+ul li a:link,
+ul li a:visited{
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -201,6 +201,32 @@ nav a:visited{
 }
 .login a:hover{
   border-bottom: transparent;
+}
+
+/* ---------------------------- */
+      /* Sticky Logo and Nav */
+/* ---------------------------- */
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, .7);
+}
+.sticky ul li a:link ,
+.sticky ul li a:visited{
+  padding: .5rem .2rem;
+}
+.sticky ul li{
+  margin: 1rem 4rem 0 0;
+}
+.sticky .logo-img{
+  height: 6rem;
+  margin: 1rem 0 1rem 10rem;
+}
+.sticky ul{
+  margin-right: 10rem;
 }
 
 /* ---------------------------- */
@@ -385,9 +411,9 @@ nav a:visited{
 .app-image{
   text-align: center;
 }
-.app-image img{
-  animation: moveUp .9s;
-  transition: all .9s;
+.app-image-animaton .phone-img{
+  animation: moveUp 2s;
+  transition: .9s;
 }
 .app-steps{
   font-size: 1.6rem;
@@ -525,29 +551,28 @@ textarea{
   font-size: 3.5rem;
   padding: 0 1rem;
   margin-top: 3rem;
-  color: var(--main-green);
 }
 .fa-facebook{
   margin-left: 6rem;
 }
-.fa-facebook:hover{
+.fa-facebook{
   color: #3b5998;
 }
-.fa-instagram:hover{
+.fa-instagram{
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
     background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.fa-twitter-square:hover{
+.fa-twitter-square{
   color: #55aded;
 }
-.fa-google-plus-square:hover{
+.fa-google-plus-square{
   color: #dd4b3e;
 }
 
 /* ---------------------------- */
-      /* Section Message */
+      /* Section Footer */
 /* ---------------------------- */
 
 footer{
