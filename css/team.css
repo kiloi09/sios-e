@@ -1,0 +1,140 @@
+:root{
+  --main-green: #47d583;
+  --white: #fff;
+  --Ligt-Grey: #f7f7f7;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ---------------------------- */
+      /* Start-up */
+/* ---------------------------- */
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #777;
+  box-sizing: border-box;
+}
+
+/* ---------------------------- */
+      /* Header */
+/* ---------------------------- */
+
+header{
+  background-color: var(--Ligt-Grey);
+  padding: .5rem;
+}
+header h1{
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  float: left;
+}
+nav{
+  float: right;
+}
+nav li{
+  list-style-type: none;
+  margin-top: 3rem;
+  margin-right: 14rem;
+}
+nav li a{
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--main-green);
+  text-transform: uppercase;
+}
+li.bot-animation{
+  position: relative;
+}
+li.bot-animation:hover{
+  border-bottom: none;
+}
+li.bot-animation::after{
+  content: '';
+  position: absolute;
+  width: .8rem;
+  height: .2rem;
+  left: 50%;
+  bottom: -2%;
+  background-color: var(--main-green);
+  transition: all ease-in-out .2s;
+
+}
+li.bot-animation:hover::after{
+  width: 100%;
+  left: 0;
+
+}
+
+/* ---------------------------- */
+      /* Agent Section */
+/* ---------------------------- */
+.agents{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  max-width: 90rem;
+  margin: 0 auto;
+
+}
+.agent-img{
+  text-align: center;
+}
+.agent-img img{
+  border: 1px solid var(--main-green);
+}
+.fab{
+  font-size: 3rem;
+  padding: .5rem;
+  color: var(--main-green);
+  margin-top: -1rem;
+}
+.agent-info h1{
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.agent-info h1::after{
+  content: "";
+  height: .1rem;
+  background-color: red;
+  width: 100%;
+  display: block;
+}
+.agent-info{
+  margin-top: 2rem;
+}
+.agent-info h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: -1rem;
+}
+blockquote{
+  font-size: 1.6rem;
+  font-weight: 400;
+  position: relative;
+  /* width: 100%; */
+    /* margin-left: -.1rem; */
+}
+blockquote::after{
+  content: "\201C";
+  font-size: 5rem;
+  display: block;
+  position: absolute;
+  top: -20%;
+  left: -7%;
+  color: var(--main-green);
+}
