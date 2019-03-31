@@ -1,0 +1,151 @@
+:root{
+  --main-green: #47d583;
+  --white: #fff;
+  --Ligt-Grey: #f7f7f7;
+}
+/* ---------------------------- */
+      /* Global*/
+/* ---------------------------- */
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+a{
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.left-margin{
+  margin-left: -3rem;
+}
+
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  /* margin: 0;
+  padding: 0; */
+  padding: 2rem;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #777;
+  box-sizing: border-box;
+}
+header{
+  background-image: linear-gradient( to right bottom,
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4)),
+  url(../img/l-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+h1{
+  font-size: 3rem;
+  font-weight: 400;
+  float: left;
+}
+header .nav:visited,
+header .nav:link{
+  float: right;
+  color: var(--main-green);
+  margin-right: 10rem;
+  margin-top: 2.5rem;
+}
+.header-filter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+  padding: 5rem;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: .5rem;
+}
+.barangay{
+  margin-left: 2rem;
+}
+.header-filter select{
+  width: 40%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-right: .5rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 300;
+  border-radius: .5rem;
+}
+.header-filter a:visited,
+.header-filter a:link{
+  font-size: 1.7rem;
+  padding: .8rem;
+  color: var(--white);
+  background-color: var(--main-green);
+  border-radius: .5rem;
+  font-weight: 400;
+}
+
+/* ---------------------------- */
+      /* Section Listings*/
+/* ---------------------------- */
+h2{
+  text-align: center;
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: .3rem;
+  word-spacing: .2rem;
+  margin-bottom: 5rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+h2::after{
+  content: "";
+  display: block;
+  background-color: var(--main-green);
+  height: .2rem;
+  width: 10rem;
+  margin: 0 auto;
+}
+.listings{
+  display: grid;
+  /* grid-template-columns: repeat(5,1fr); */
+  grid-template-columns: repeat(auto-fill,minmax(30.12rem,1fr));
+  grid-gap: 1rem;
+}
+.house-img{
+  position: relative;
+}
+.house-img p{
+  position: absolute;
+  top: -9%;
+  left: 0;
+  font-size: 2.2rem;
+  color: var(--main-green);
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+
+}
+.house-img img{
+  border-radius: 1rem;
+  width: 100%;
+  height: 25rem;
+}
+.house-details ul li{
+  list-style-type: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+.house-details{
+  margin-top: -1rem;
+}
