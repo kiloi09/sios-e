@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +9,82 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/listings.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Sios-e Real Estate and Brokerage</title>
 </head>
+
 <body>
   <header class="clearfix">
-    <a class="nav" href="">Home</a>
+    <a class="nav" href="home.html">Home</a>
 
     <div class="header-filter">
-    <select class="barangay">
-      <option value="Search By Barangay">Search By Barangay</option>
-      <option>Bulua</option>
-      <option>Patag</option>
-      <option>Bonbon</option>
-      <option>Macasandig</option>
-  </select>
-  <select>
-    <option value="Search By Barangay">Search By Price</option>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="opel">Opel</option>
-    <option value="audi">Audi</option>
-  </select>
-    <a href="">Search</a>
-  </div>
+      <select class="barangay">
+        <option value="Search By Barangay">Search By Barangay</option>
+        <option>Bulua</option>
+        <option>Patag</option>
+        <option>Bonbon</option>
+        <option>Macasandig</option>
+      </select>
+      <select>
+        <option value="Search By Barangay">Search By Price</option>
+        <option value="volvo">1</option>
+        <option value="saab">2</option>
+        <option value="opel">3</option>
+        <option value="audi">4</option>
+      </select>
+      <a href="">Search</a>
+    </div>
   </header>
 
   <main>
     <section>
       <h2>Choose The Home You Love</h2>
       <div class="listings">
-        <div>
-          <div class="house-img">
+
+        <div class="listings-container">
+          <div class="house-img clearfix">
             <img src="./img/th-1.jpg" alt="">
-            <p class="price">&nbsp;&nbsp;&#8369;&nbsp;1,000,000</p>
+            <p>
+            <span class="price">&#8369;1,000,000</span>
+            <span class="favorite"><i class="far fa-heart"></i></span>
+            </p>
           </div>
+
+          <div class="listings-location">
+            <h3><span class="main-loc">Cagayan de Oro City</span>
+                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
+            </h3>
+          </div>
+
           <div class="house-details">
+            <ul>
+              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
+              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
+              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
+              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
+            </ul>
+            <div class="house-details--btn">
+              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:green;">
+
+          <div class="Best-Offers--Box Best-Offers--Back">
             <ul class="Back-info">
-              <li class="fas fa-bed bed left-margin"> &nbsp;<span>5 Bedrooms</span></li>
-              <li class="fas fa-bath toilet-bath"> &nbsp;<span>3 Toilet and Bath</span></li>
-              <li class="fas fa-th floor-area left-margin"> &nbsp;<span>(150sqm) Floor Area</span></li>
-              <li class="fas fa-camera">&nbsp;<span>(200sqm) Lot Area</span></li>
-              <li><i class="fas fa-camera"></i>asdasdds</li>
+              <li class="fas fa-bed">&nbsp;<span>5 Bedrooms</span></li><br />
+              <li class="fas fa-bath">&nbsp;<span>3 Toilet and Bath</span></li></br>
+              <li class="fas fa-th">&nbsp;<span>(150sqm) Floor Area</span></li></br>
+              <li class="fas fa-th-large">&nbsp;<span>(200sqm) Lot Area</span></li></br>
+              <li class="fas fa-home">&nbsp;<span>Bunggalow</span></li>
             </ul>
             <div class="section-features--btn">
               <p class="btn-noshake"><a href="#">More Information &rarr;</a></p>
             </div>
-
           </div>
 
         </div>
-        <div style="background:green;">2</div>
-        <div style="background:orange;">3</div>
-        <div style="background:black;">4</div>
-        <div style="background:pink;">5</div>
-        <div style="background:red;">1</div>
-        <div style="background:green;">2</div>
         <div style="background:orange;">3</div>
         <div style="background:black;">4</div>
         <div style="background:pink;">5</div>
@@ -75,6 +97,6 @@
 
     </section>
   </main>
-
 </body>
+
 </html>
