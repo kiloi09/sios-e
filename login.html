@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/login.css">
   <title>Sios-e Real Estate and Brokerage</title>
 </head>
 
@@ -22,9 +22,17 @@
         <li class="animation-bot"><a href="#" class="js--scroll-about">About us</a></li>
         <li class="animation-bot"><a href="#" class="js--scroll-app">Our App</a></li>
         <li class="animation-bot"><a href="#"class="js--scroll-contact">Contact Us</a></li>
-        <li class="login"><a href="#registration-pop">Sign Up!</a></li>
       </ul>
+      <div class="user-info dropdown">
+      <p class="drop-logo"></p>
+          <div class="drop-content">
+            <i class="fas fa-user-alt"><a href="edit-profile.html" >&nbsp;Profile</a></i>
+            <i class="fas fa-heart"><a href="favorites.html" >&nbsp;My Favorites</a></i>
+            <i class="fas fa-sign-out-alt"><a href="">&nbsp;Logout</a></i>
+          </div>
+      </div>
     </nav>
+
 
     <div class="header-text">
       <h1>
@@ -61,158 +69,177 @@
       </div>
     </section>
 
-
     <section id="s-section-features" class="js--section-features">
       <h2>FEATURED PROPERTIES</h2>
-      <div class="section-features">
-        <div class="features-Best_Offers">
-          <div class="Best-Offers--Box Best-Offers--Front">
-            <div class="Offers-Front--img">
-              <img data-src="./img/th-1.jpg" alt="" class="lazyload">
-              <span class="Best_Offers--Price">&#8369;1,500,000</span>
-            </div>
-            <div class="Offers-Front--location">
-              <p><i class="fas fa-map-marker-alt"></i><span class="Location">Location:</span>&nbsp; Bulua Cagayan de Oro City</p>
-            </div>
+      <div class="listings">
+
+        <div class="listings-container">
+          <div class="house-img clearfix">
+            <img src="./img/th-1.jpg" alt="">
+            <p>
+            <span class="price">&#8369;1,000,000</span>
+            <span class="favorite"><i class="far fa-heart"></i></span>
+            </p>
           </div>
 
-          <div class="Best-Offers--Box Best-Offers--Back">
-            <ul class="Back-info">
-              <li class="fas fa-bed">&nbsp; &nbsp; &nbsp;<span>5 Bedrooms</span></li><br />
-              <li class="fas fa-bath">&nbsp; &nbsp; &nbsp;<span>3 Toilet and Bath</span></li></br>
-              <li class="fas fa-th">&nbsp; &nbsp; &nbsp;<span>(150sqm) Floor Area</span></li></br>
-              <li class="fas fa-th-large">&nbsp; &nbsp; &nbsp;<span>(200sqm) Lot Area</span></li></br>
+          <div class="listings-location">
+            <h3><span class="main-loc">Cagayan de Oro City</span>
+                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
+            </h3>
+          </div>
+
+          <div class="house-details">
+            <ul>
+              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
+              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
+              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
+              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
             </ul>
-            <div class="section-features--btn">
-              <p class="btn-noshake"><a href="#">More Information &rarr;</a></p>
+            <div class="house-details--btn">
+              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
             </div>
           </div>
         </div>
 
-
-        <div class="features-Best_Offers">
-          <div class="Best-Offers--Box Best-Offers--Front">
-            <div class="Offers-Front--img">
-              <img data-src="./img/th-2.jpg" alt="" class="lazyload">
-              <span class="Best_Offers--Price">&#8369;1,500,000</span>
-            </div>
-            <div class="Offers-Front--location">
-              <p><i class="fas fa-map-marker-alt"></i><span class="Location">Location:</span>&nbsp; Bulua Cagayan de Oro City</p>
-            </div>
+        <div class="listings-container">
+          <div class="house-img clearfix">
+            <img src="./img/th-2.jpg" alt="">
+            <p>
+            <span class="price">&#8369;1,000,000</span>
+            <span class="favorite"><i class="far fa-heart"></i></span>
+            </p>
           </div>
 
-          <div class="Best-Offers--Box Best-Offers--Back">
-            <ul class="Back-info">
-              <li class="fas fa-bed">&nbsp; &nbsp; &nbsp;<span>5 Bedrooms</span></li><br />
-              <li class="fas fa-bath">&nbsp; &nbsp; &nbsp;<span>3 Toilet and Bath</span></li></br>
-              <li class="fas fa-th">&nbsp; &nbsp; &nbsp;<span>(150sqm) Floor Area</span></li></br>
-              <li class="fas fa-th-large">&nbsp; &nbsp; &nbsp;<span>(200sqm) Lot Area</span></li></br>
+          <div class="listings-location">
+            <h3><span class="main-loc">Cagayan de Oro City</span>
+                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
+            </h3>
+          </div>
+
+          <div class="house-details">
+            <ul>
+              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
+              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
+              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
+              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
             </ul>
-            <div class="section-features--btn">
-              <p class="btn-noshake"><a href="#">More Information &rarr;</a></p>
+            <div class="house-details--btn">
+              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
             </div>
           </div>
         </div>
-
-        <div class="features-Best_Offers">
-          <div class="Best-Offers--Box Best-Offers--Front">
-            <div class="Offers-Front--img">
-              <img data-src="./img/th-3.jpg" alt="" class="lazyload">
-              <span class="Best_Offers--Price">&#8369;1,500,000</span>
-            </div>
-            <div class="Offers-Front--location">
-              <p><i class="fas fa-map-marker-alt"></i><span class="Location">Location:</span>&nbsp; Bulua Cagayan de Oro City</p>
-            </div>
+        <div class="listings-container">
+          <div class="house-img clearfix">
+            <img src="./img/th-3.jpg" alt="">
+            <p>
+            <span class="price">&#8369;1,000,000</span>
+            <span class="favorite"><i class="far fa-heart"></i></span>
+            </p>
           </div>
 
-          <div class="Best-Offers--Box Best-Offers--Back">
-            <ul class="Back-info">
-              <li class="fas fa-bed">&nbsp; &nbsp; &nbsp;<span>5 Bedrooms</span></li><br />
-              <li class="fas fa-bath">&nbsp; &nbsp; &nbsp;<span>3 Toilet and Bath</span></li></br>
-              <li class="fas fa-th">&nbsp; &nbsp; &nbsp;<span>(150sqm) Floor Area</span></li></br>
-              <li class="fas fa-th-large">&nbsp; &nbsp; &nbsp;<span>(200sqm) Lot Area</span></li></br>
+          <div class="listings-location">
+            <h3><span class="main-loc">Cagayan de Oro City</span>
+                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
+            </h3>
+          </div>
+
+          <div class="house-details">
+            <ul>
+              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
+              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
+              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
+              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
             </ul>
-            <div class="section-features--btn">
-              <p class="btn-noshake"><a href="#">More Information &rarr;</a></p>
+            <div class="house-details--btn">
+              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
             </div>
           </div>
         </div>
-
-        <div class="features-Best_Offers">
-          <div class="Best-Offers--Box Best-Offers--Front">
-            <div class="Offers-Front--img">
-              <img data-src="./img/th-4.jpg" alt="" class="lazyload">
-              <span class="Best_Offers--Price">&#8369;1,500,000</span>
-            </div>
-            <div class="Offers-Front--location">
-              <p><i class="fas fa-map-marker-alt"></i><span class="Location">Location:</span>&nbsp; Bulua Cagayan de Oro City</p>
-            </div>
+        <div class="listings-container">
+          <div class="house-img clearfix">
+            <img src="./img/th-4.jpg" alt="">
+            <p>
+            <span class="price">&#8369;1,000,000</span>
+            <span class="favorite"><i class="far fa-heart"></i></span>
+            </p>
           </div>
 
-          <div class="Best-Offers--Box Best-Offers--Back">
-            <ul class="Back-info">
-              <li class="fas fa-bed">&nbsp; &nbsp; &nbsp;<span>5 Bedrooms</span></li><br />
-              <li class="fas fa-bath">&nbsp; &nbsp; &nbsp;<span>3 Toilet and Bath</span></li></br>
-              <li class="fas fa-th">&nbsp; &nbsp; &nbsp;<span>(150sqm) Floor Area</span></li></br>
-              <li class="fas fa-th-large">&nbsp; &nbsp; &nbsp;<span>(200sqm) Lot Area</span></li></br>
+          <div class="listings-location">
+            <h3><span class="main-loc">Cagayan de Oro City</span>
+                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
+            </h3>
+          </div>
+
+          <div class="house-details">
+            <ul>
+              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
+              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
+              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
+              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
             </ul>
-            <div class="section-features--btn">
-              <p class="btn-noshake"><a href="#">More Information &rarr;</a></p>
+            <div class="house-details--btn">
+              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
             </div>
           </div>
         </div>
-
-        <div class="features-Best_Offers">
-          <div class="Best-Offers--Box Best-Offers--Front">
-            <div class="Offers-Front--img">
-              <img data-src="./img/th-6.jpeg" alt="" class="lazyload">
-              <span class="Best_Offers--Price">&#8369;1,500,000</span>
-            </div>
-            <div class="Offers-Front--location">
-              <p><i class="fas fa-map-marker-alt"></i><span class="Location">Location:</span>&nbsp; Bulua Cagayan de Oro City</p>
-            </div>
+        <div class="listings-container">
+          <div class="house-img clearfix">
+            <img src="./img/th-5.jpeg" alt="">
+            <p>
+            <span class="price">&#8369;1,000,000</span>
+            <span class="favorite"><i class="far fa-heart"></i></span>
+            </p>
           </div>
 
-          <div class="Best-Offers--Box Best-Offers--Back">
-            <ul class="Back-info">
-              <li class="fas fa-bed">&nbsp; &nbsp; &nbsp;<span>5 Bedrooms</span></li><br />
-              <li class="fas fa-bath">&nbsp; &nbsp; &nbsp;<span>3 Toilet and Bath</span></li></br>
-              <li class="fas fa-th">&nbsp; &nbsp; &nbsp;<span>(150sqm) Floor Area</span></li></br>
-              <li class="fas fa-th-large">&nbsp; &nbsp; &nbsp;<span>(200sqm) Lot Area</span></li></br>
+          <div class="listings-location">
+            <h3><span class="main-loc">Cagayan de Oro City</span>
+                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
+            </h3>
+          </div>
+
+          <div class="house-details">
+            <ul>
+              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
+              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
+              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
+              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
             </ul>
-            <div class="section-features--btn">
-              <p class="btn-noshake"><a href="#">More Information &rarr;</a></p>
+            <div class="house-details--btn">
+              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
             </div>
           </div>
         </div>
-
-        <div class="features-Best_Offers">
-          <div class="Best-Offers--Box Best-Offers--Front">
-            <div class="Offers-Front--img">
-              <img data-src="./img/th-5.jpeg" alt="" class="lazyload">
-              <span class="Best_Offers--Price">&#8369;1,500,000</span>
-            </div>
-            <div class="Offers-Front--location">
-              <p><i class="fas fa-map-marker-alt"></i><span class="Location">Location:</span>&nbsp; Bulua Cagayan de Oro City</p>
-            </div>
+        <div class="listings-container">
+          <div class="house-img clearfix">
+            <img src="./img/th-6.jpeg" alt="">
+            <p>
+            <span class="price">&#8369;1,000,000</span>
+            <span class="favorite"><i class="far fa-heart"></i></span>
+            </p>
           </div>
 
-          <div class="Best-Offers--Box Best-Offers--Back">
-            <ul class="Back-info">
-              <li class="fas fa-bed">&nbsp; &nbsp; &nbsp;<span>5 Bedrooms</span></li><br />
-              <li class="fas fa-bath">&nbsp; &nbsp; &nbsp;<span>3 Toilet and Bath</span></li></br>
-              <li class="fas fa-th">&nbsp; &nbsp; &nbsp;<span>(150sqm) Floor Area</span></li></br>
-              <li class="fas fa-th-large">&nbsp; &nbsp; &nbsp;<span>(200sqm) Lot Area</span></li></br>
+          <div class="listings-location">
+            <h3><span class="main-loc">Cagayan de Oro City</span>
+                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
+            </h3>
+          </div>
+
+          <div class="house-details">
+            <ul>
+              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
+              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
+              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
+              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
             </ul>
-            <div class="section-features--btn">
-              <p class="btn-noshake"><a href="#">More Information &rarr;</a></p>
+            <div class="house-details--btn">
+              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
             </div>
           </div>
         </div>
-
         <div class="link--btn">
-          <p class="btn-noshake"><a href="#registration-pop">More Offers &rarr;</a></p>
+          <p class="btn-noshake"><a href="listings.html">More Offers &rarr;</a></p>
         </div>
+      </div>
     </section>
 
 
@@ -230,7 +257,6 @@
           </div>
       </div>
     </section>
-
 
     <section id="s-section-testimonial">
       <h2>Our Clients Feedback</h2>
@@ -325,9 +351,10 @@
           <input type="password" name="" value="" required>
           <label for="">Password:</label>
         </div>
-        <p class="forget-pass"><a href="#forget-pass-pop">Forget Password?</a></p>
         <p class="login-btn"><input type="submit" name="" value="Login!" class="input "></p>
       </form>
+      <p class="form-text">Don't Have an Account?&nbsp;&nbsp;<span><a href="#registration-pop">Sign up now!</a></span></p>
+
     </div>
   </section>
 
@@ -367,21 +394,6 @@
       <p class="form-text">Already have an account?&nbsp;&nbsp;<a href="#login-pop">Login Here!</a></p>
     </div>
   </section>
-
-
-  <section class="login-pop" id="forget-pass-pop">
-    <div class="login-box">
-      <a href="#" class="login-close">&times;</a>
-      <form class="login-form" action="index.html" method="post">
-        <div class="pass-email">
-          <label for="">Email:</label>
-          <input type="email" name="" value="" required>
-        </div>
-        <p class="login-btn"><input type="submit" name="" value="Submit" class="input "></p>
-      </form>
-    </div>
-  </section>
-
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/lazysizes@4.1.7/lazysizes.js"></script>

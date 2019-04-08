@@ -1,28 +1,16 @@
-
-
 :root{
   --main-green: #47d583;
   --white: #fff;
   --Ligt-Grey: #f7f7f7;
 }
-/* ---------------------------- */
-      /* Global*/
-/* ---------------------------- */
 .clearfix::after{
   content: "";
   display: table;
   clear: both;
 }
-a{
-  text-decoration: none;
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.left-margin{
-  margin-left: -3rem;
-}
-
+/* ---------------------------- */
+      /* Start-up */
+/* ---------------------------- */
 *::after,
 *::before{
   margin: 0;
@@ -33,92 +21,51 @@ html{
   font-size: 62.5%;
 }
 body{
-  /* margin: 0;
-  padding: 0; */
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   font-family: 'Lato', sans-serif;
   line-height: 1.7;
   font-weight: 400;
   color: #777;
   box-sizing: border-box;
 }
-header{
-  background-image: linear-gradient( to right bottom,
-  rgba(0, 0, 0, 0.4),
-  rgba(0, 0, 0, 0.4)),
-  url(../img/l-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-  position: relative;
+nav{
+  background-color: var(--Ligt-Grey);
+  margin-bottom: 2rem;
 }
-h1{
-  font-size: 3rem;
-  font-weight: 400;
+.logo-img{
+  height: 9rem;
   float: left;
 }
-header .nav:visited,
-header .nav:link{
+nav ul{
   float: right;
-  color: var(--main-green);
-  margin-right: 10rem;
-  margin-top: 2.5rem;
+  /* margin-top: 3rem; */
 }
-.header-filter{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 50%;
-  padding: 5rem;
-  background-color: rgba(255, 255, 255, .5);
-  border-radius: .5rem;
+nav ul li{
+  display: inline-block;
+  margin: 2rem 4rem 0 0;
 }
-.barangay{
-  margin-left: 2rem;
-}
-.header-filter select{
-  width: 40%;
-  font-size: 1.6rem;
-  padding: 1rem;
-  margin-right: .5rem;
-  color: rgba(0, 0, 0, 0.7);
-  font-weight: 300;
-  border-radius: .5rem;
-}
-.header-filter a:visited,
-.header-filter a:link{
-  font-size: 1.7rem;
-  padding: .8rem;
-  color: var(--white);
-  background-color: var(--main-green);
-  border-radius: .5rem;
-  font-weight: 400;
-}
-
-/* ---------------------------- */
-      /* Section Listings*/
-/* ---------------------------- */
-h2{
-  text-align: center;
-  font-weight: 300;
-  font-size: 4rem;
-  letter-spacing: .3rem;
-  word-spacing: .2rem;
-  margin-bottom: 5rem;
-  padding: 1rem 0;
+header li a:link,
+header li a:visited{
+  text-decoration: none;
   text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--main-green);
+  padding: .5rem .2rem;
+  letter-spacing: .1rem;
 }
-h2::after{
-  content: "";
-  display: block;
-  background-color: var(--main-green);
-  height: .2rem;
-  width: 10rem;
+.animation-bot a:hover{
+  color: var(--main-green);
+}
+.favorites{
+  max-width: 130rem;
   margin: 0 auto;
+  border: 1px solid var(--Ligt-Grey);
+  padding: 1rem;
 }
-.listings{
+.container{
   display: grid;
+  /* grid-template-columns: repeat(5,1fr); */
   grid-template-columns: repeat(auto-fill,minmax(30.12rem,1fr));
   grid-gap: 1rem;
 }
@@ -149,6 +96,13 @@ h2::after{
   cursor: pointer;
   float: right;
 }
+.favorite .fas{
+  font-size: 2rem;
+  background-color: var(--main-green);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .house-img img{
   width: 100%;
   height: 25rem;

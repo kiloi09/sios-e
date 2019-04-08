@@ -47,7 +47,4 @@ $('.js--section-app').waypoint(function(direction){
 
 
 
-
-
-
 });

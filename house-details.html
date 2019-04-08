@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/house-details.css">
+  <link rel="stylesheet" href="Vendors/magnific-popup.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+
+  </header>
+  <main>
+    <section class="house-details">
+      <div class="container">
+
+        <div class="house-image">
+
+
+            <div class="image-container clearfix">
+              <img src="./img/th-1.jpg" alt="" >
+              <p>
+              <span class="price">&#8369;1,000,000</span>
+              <span class="favorite"><i class="far fa-heart"></i></span>
+              </p>
+            </div>
+
+            <div class="listings-location">
+              <h3>
+                <span class="main-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Cagayan de Oro City,Bulua</span>
+              </h3>
+            </div>
+            <div class="details">
+              <ul>
+                <li class="fas fa-bed">&nbsp;<span>5 Bedrooms</span></li>
+                <li class="fas fa-bath">&nbsp;<span>3 Toilet and Bath</span></li>
+                <li class="fas fa-th">&nbsp;<span>(150sqm) FA</span></li>
+                <li class="fas fa-th-large">&nbsp;<span>(200sqm) LA</span></li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="house-discreption">
+          <h2>House Description</h2>
+          <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </div>
+
+
+        <div class="house-contact">
+          <div class="contact-container">
+          <h2>Contact Us For Reservation/Site Viewing</h2>
+          <ul>
+            <li class="fas fa-phone-volume"><span>+639-95-223-0562</span></li>
+            <li class="fas fa-mobile-alt"><span>+000-000-000</span></li>
+            <li class="fas fa-envelope"><span>mikeparista@gmail.com</span></li>
+            <li class="fab fa-facebook"><span><a href="https://www.facebook.com/sioserealestatecenter/">Sios-e Official Page</a></span></li>
+          </ul>
+          </div>
+        </div>
+        <div class="hide"></div>
+      </div>
+
+  <section class="gallery">
+    <h2>House Gallery</h2>
+      <div class="house-gallery">
+        <a href="./img/th-1.jpg"  class="gimg" title="mike"><img src="./img/th-1.jpg" alt=""></a>
+        <a href="./img/th-2.jpg"  class="gimg"><img src="./img/th-2.jpg" alt=""></a>
+        <a href="./img/th-3.jpg" class="gimg"><img src="./img/th-3.jpg" alt=""></a>
+        <a href="./img/th-4.jpg" class="gimg"><img src="./img/th-4.jpg" alt=""></a>
+        <a href="./img/th-5.jpeg" class="gimg"><img src="./img/th-5.jpeg" alt=""></a>
+        <a href="./img/th-6.jpeg" class="gimg"><img src="./img/th-6.jpeg" alt=""></a>
+        <a href="./img/th-1.jpg" class="gimg"><img src="./img/th-1.jpg" alt=""></a>
+        <a href="./img/th-2.jpg" class="gimg"><img src="./img/th-2.jpg" alt=""></a>
+        <a href="./img/th-3.jpg" class="gimg"><img src="./img/th-3.jpg" alt=""></a>
+        <a href="./img/th-4.jpg" class="gimg"><img src="./img/th-4.jpg" alt=""></a>
+      </div>
+    </section>
+  </div>
+  </section>
+  </main>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="Vendors/jquery.magnific-popup.min.js" charset="utf-8"></script>
+
+      <script>
+      $(document).ready(function(){
+        $('.gimg').magnificPopup({
+          type: 'image',
+  gallery:{
+    enabled:true
+  },
+  image: {
+
+    titleSrc: 'title',
+    titleSrc: function(item) {
+     return item.el.attr('title') + '<small>by Sios-e Real Estate and Brokerage</small>';
+    }
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+          // other options
+        });
+
+      });
+      </script>
+
+</body>
+</html>

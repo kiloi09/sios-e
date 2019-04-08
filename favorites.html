@@ -1,52 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/listings.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/favorites.css">
   <title>Sios-e Real Estate and Brokerage</title>
 </head>
-
 <body>
   <header class="clearfix">
-    <a class="nav" href="login.html">Home</a>
-
-    <div class="header-filter">
-      <select class="barangay">
-        <option value="Search By Barangay">Search By Barangay</option>
-        <option>Bulua</option>
-        <option>Patag</option>
-        <option>Bonbon</option>
-        <option>Macasandig</option>
-      </select>
-      <select>
-        <option value="Search By Barangay">Search By Price</option>
-        <option value="volvo">1</option>
-        <option value="saab">2</option>
-        <option value="opel">3</option>
-        <option value="audi">4</option>
-      </select>
-      <a href="">Search</a>
-    </div>
+    <nav class="clearfix">
+      <img src="./img/logo.png" alt="Sios-e Logo" class="logo-img lazyload">
+      <ul>
+        <li class="animation-bot"><a href="login.html">Home</a></li>
+    </nav>
   </header>
-
   <main>
-    <section>
-      <h2>Choose The Home You Love</h2>
-      <div class="listings">
-
+    <section class="favorites">
+      <div class="container">
         <div class="listings-container">
           <div class="house-img clearfix">
             <img src="./img/th-1.jpg" alt="">
             <p>
             <span class="price">&#8369;1,000,000</span>
-            <span class="favorite"><i class="far fa-heart"></i></span>
+            <span class="favorite"><i class="fas fa-heart"></i></span>
             </p>
           </div>
 
@@ -68,13 +46,12 @@
             </div>
           </div>
         </div>
-
         <div class="listings-container">
           <div class="house-img clearfix">
             <img src="./img/th-2.jpg" alt="">
             <p>
             <span class="price">&#8369;1,000,000</span>
-            <span class="favorite"><i class="far fa-heart"></i></span>
+            <span class="favorite"><i class="fas fa-heart"></i></span>
             </p>
           </div>
 
@@ -101,7 +78,7 @@
             <img src="./img/th-3.jpg" alt="">
             <p>
             <span class="price">&#8369;1,000,000</span>
-            <span class="favorite"><i class="far fa-heart"></i></span>
+            <span class="favorite"><i class="fas fa-heart"></i></span>
             </p>
           </div>
 
@@ -128,7 +105,7 @@
             <img src="./img/th-4.jpg" alt="">
             <p>
             <span class="price">&#8369;1,000,000</span>
-            <span class="favorite"><i class="far fa-heart"></i></span>
+            <span class="favorite"><i class="fas fa-heart"></i></span>
             </p>
           </div>
 
@@ -155,7 +132,7 @@
             <img src="./img/th-5.jpeg" alt="">
             <p>
             <span class="price">&#8369;1,000,000</span>
-            <span class="favorite"><i class="far fa-heart"></i></span>
+            <span class="favorite"><i class="fas fa-heart"></i></span>
             </p>
           </div>
 
@@ -182,7 +159,7 @@
             <img src="./img/th-6.jpeg" alt="">
             <p>
             <span class="price">&#8369;1,000,000</span>
-            <span class="favorite"><i class="far fa-heart"></i></span>
+            <span class="favorite"><i class="fas fa-heart"></i></span>
             </p>
           </div>
 
@@ -204,118 +181,11 @@
             </div>
           </div>
         </div>
-        <div class="listings-container">
-          <div class="house-img clearfix">
-            <img src="./img/th-4.jpg" alt="">
-            <p>
-            <span class="price">&#8369;1,000,000</span>
-            <span class="favorite"><i class="far fa-heart"></i></span>
-            </p>
-          </div>
 
-          <div class="listings-location">
-            <h3><span class="main-loc">Cagayan de Oro City</span>
-                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
-            </h3>
-          </div>
-
-          <div class="house-details">
-            <ul>
-              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
-              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
-              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
-              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
-            </ul>
-            <div class="house-details--btn">
-              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="listings-container">
-          <div class="house-img clearfix">
-            <img src="./img/th-2.jpg" alt="">
-            <p>
-            <span class="price">&#8369;1,000,000</span>
-            <span class="favorite"><i class="far fa-heart"></i></span>
-            </p>
-          </div>
-
-          <div class="listings-location">
-            <h3><span class="main-loc">Cagayan de Oro City</span>
-                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
-            </h3>
-          </div>
-
-          <div class="house-details">
-            <ul>
-              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
-              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
-              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
-              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
-            </ul>
-            <div class="house-details--btn">
-              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="listings-container">
-          <div class="house-img clearfix">
-            <img src="./img/th-6.jpeg" alt="">
-            <p>
-            <span class="price">&#8369;1,000,000</span>
-            <span class="favorite"><i class="far fa-heart"></i></span>
-            </p>
-          </div>
-
-          <div class="listings-location">
-            <h3><span class="main-loc">Cagayan de Oro City</span>
-                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
-            </h3>
-          </div>
-
-          <div class="house-details">
-            <ul>
-              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
-              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
-              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
-              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
-            </ul>
-            <div class="house-details--btn">
-              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="listings-container">
-          <div class="house-img clearfix">
-            <img src="./img/th-1.jpg" alt="">
-            <p>
-            <span class="price">&#8369;1,000,000</span>
-            <span class="favorite"><i class="far fa-heart"></i></span>
-            </p>
-          </div>
-
-          <div class="listings-location">
-            <h3><span class="main-loc">Cagayan de Oro City</span>
-                <span class="sub-loc"><i class="fas fa-map-marker-alt"></i>&nbsp;Bulua</span>
-            </h3>
-          </div>
-
-          <div class="house-details">
-            <ul>
-              <li><i class="fas fa-bed"> &nbsp;<span>5 Bedrooms</span></i></li>
-              <li><i class="fas fa-bath">&nbsp;<span>3 Toilet & Bath</span></i></li>
-              <li><i class="fas fa-th-large">&nbsp;&nbsp;<span>(150sqm) FA</span></i></li>
-              <li><i class="fas fa-th">&nbsp;&nbsp;<span>(200sqm) LA</span></i></li>
-            </ul>
-            <div class="house-details--btn">
-              <p class="btn-noshake"><a href="#">More Deatails &rarr;</a></p>
-            </div>
-          </div>
-        </div>
       </div>
 
     </section>
   </main>
-</body>
 
+</body>
 </html>

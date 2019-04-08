@@ -222,9 +222,8 @@ ul li a:visited{
   margin: 1rem 0 1rem 10rem;
 }
 .sticky ul{
-  margin-right: 10rem;
+  margin-right: 13rem;
 }
-
 /* ---------------------------- */
       /* Section About */
 /* ---------------------------- */
@@ -679,13 +678,33 @@ footer a:link{
   color: var(--main-green);
   font-size: 1.5rem;
 }
+.forget-pass a:visited,
+.forget-pass a:link{
+  font-size: 1.6rem;
+  color: var(--main-green);
+  text-decoration: none;
+}
+.forget-pass{
+  text-align: right;
+  margin-top: -3rem;
+  margin-right: 1.5rem;
+  margin-bottom: 2rem;
+}
+.pass-email{
+  color: var(--main-green);
+  font-size: 2rem;
+}
+.pass-email input[type="email"]{
+  padding: 1rem;
+  width: 100%;
+  color: darkgrey;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
 .login-btn,
 .register-btn{
   text-align: center;
 }
-/* input[type="submit"]{
-  width: 100%;
-} */
 .login-close:visited,
 .login-close:link{
   color: var(--white);
