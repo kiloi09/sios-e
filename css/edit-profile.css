@@ -110,24 +110,13 @@ header li a:visited{
   grid-row: 1/2;
   border: 2px solid var(--Ligt-Grey);
   height: 50%;
-  position: relative;
-}
-.header h2{
-  position: absolute;
-  top: -60%;
-  left: 50%;
-  transform: translate(-50%,50%);
   text-align: center;
-}
-.main-text{
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .second-text{
-  font-size: 1.6rem;
-  font-weight: 300;
-  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  word-spacing: .1rem;
 }
 .content{
     grid-column: 2/4;

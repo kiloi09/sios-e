@@ -12,7 +12,11 @@
 </head>
 <body>
   <header>
-
+    <nav class="clearfix">
+      <img src="./img/logo.png" alt="Sios-e Logo" class="logo-img lazyload">
+      <ul>
+        <li class="animation-bot"><a href="login.html">Home</a></li>
+    </nav>
   </header>
   <main>
     <section class="house-details">
@@ -43,28 +47,13 @@
               </ul>
             </div>
         </div>
+      </div>
 
-        <div class="house-discreption">
-          <h2>House Description</h2>
-          <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        </div>
-
-
-        <div class="house-contact">
-          <div class="contact-container">
-          <h2>Contact Us For Reservation/Site Viewing</h2>
-          <ul>
-            <li class="fas fa-phone-volume"><span>+639-95-223-0562</span></li>
-            <li class="fas fa-mobile-alt"><span>+000-000-000</span></li>
-            <li class="fas fa-envelope"><span>mikeparista@gmail.com</span></li>
-            <li class="fab fa-facebook"><span><a href="https://www.facebook.com/sioserealestatecenter/">Sios-e Official Page</a></span></li>
-          </ul>
-          </div>
-        </div>
-        <div class="hide"></div>
+      <div class="house-discreption">
+        <h2>House Description</h2>
+        <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+      </div>
       </div>
 
   <section class="gallery">
@@ -83,15 +72,48 @@
       </div>
     </section>
   </div>
+
+<div id="sideNavi">
+    <!-- sidenavi menu //-->
+    <div class="side-navi-item-default"></div>
+    <div class="side-navi-item item1"><div>Contact Us</div></div>
+    <!-- sidenavi data //-->
+    <div class="side-navi-data">
+        <div class="side-navi-tab">
+            <div>
+              <div class="house-contact">
+                <h2>Contact Us For Reservation /<br>Site Viewing</h2>
+                <ul>
+                  <li class="fas fa-phone-volume"><span>+639-95-223-0562</span></li>
+                  <li class="fas fa-mobile-alt"><span>+000-000-000</span></li>
+                  <li class="fas fa-envelope"><span>mikeparista@gmail.com</span></li>
+                  <li class="fab fa-facebook"><span><a href="https://www.facebook.com/sioserealestatecenter/">Sios-e Official Page</a></span></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
   </section>
   </main>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="Vendors/jquery.magnific-popup.min.js" charset="utf-8"></script>
+  <script src="Vendors/SideNavi.js" charset="utf-8"></script>
 
       <script>
       $(document).ready(function(){
+        SideNavi.init('right', {
+            container : '#sideNavi',
+            defaultitem : '.side-navi-item-default',
+            item : '.side-navi-item',
+            data : '.side-navi-data',
+            tab : '.side-navi-tab',
+            active : '.active'
+        });
+
+
         $('.gimg').magnificPopup({
           type: 'image',
   gallery:{
@@ -102,24 +124,8 @@
     titleSrc: 'title',
     titleSrc: function(item) {
      return item.el.attr('title') + '<small>by Sios-e Real Estate and Brokerage</small>';
-    }
-
-
-
-
-  }
-
-
-
-
-
-
-
-
-
-          // other options
-        });
-
+    } }
+});
       });
       </script>
 

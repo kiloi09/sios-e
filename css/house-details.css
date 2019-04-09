@@ -22,14 +22,40 @@ html{
   font-size: 62.5%;
 }
 body{
-  padding: 1rem;
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   font-family: 'Lato', sans-serif;
   line-height: 1.7;
   font-weight: 400;
   color: #777;
   box-sizing: border-box;
+}
+nav{
+  background-color: var(--Ligt-Grey);
+  margin-bottom: 2rem;
+}
+.logo-img{
+  height: 9rem;
+  float: left;
+}
+nav ul{
+  float: right;
+}
+nav ul li{
+  display: inline-block;
+  margin: 2rem 4rem 0 0;
+}
+header li a:link,
+header li a:visited{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--main-green);
+  padding: .5rem .2rem;
+  letter-spacing: .1rem;
+}
+.animation-bot a:hover{
+  color: var(--main-green);
 }
 /* ---------------------------- */
       /* House Details */
@@ -37,14 +63,14 @@ body{
 
 .container{
   display: grid;
-  /* grid-template-columns: repeat(3,1fr); */
-  grid-template-columns: repeat(auto-fill,minmax(465px,1fr));
-  margin-top: 10rem;
+  /* grid-template-columns: repeat(auto-fill,minmax(500px,1fr)); */
+  grid-template-columns: repeat(4,1fr);
   grid-gap: 1rem;
-  /* background-color: var(--Ligt-Grey); */
   padding: 1rem .5rem;
 }
-
+.house-image{
+  grid-column: 2/4;
+}
 .image-container{
   position: relative;
 }
@@ -90,7 +116,6 @@ body{
   text-align: center;
 }
 .details ul li{
-
   list-style-type: none;
   font-size: 1.6rem;
   padding: 1rem;
@@ -103,41 +128,45 @@ body{
   color: var(--main-green);
 }
 .contact-container{
-  width: 100%;
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 8rem;
   border: 1px solid #e0e0e0;
-  /* border: 1px solid var(--main-green); */
-   box-shadow: 1px 1px rgba(136, 136, 136, .4);
+  box-shadow: 1px 1px rgba(136, 136, 136, .4);
+  width: 100%;
+  background-color: var(--main-green);
 }
-.contact-container h2{
+.house-contact h2{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
-.contact-container ul{
-  margin-left: 3rem;
+.house-contact ul{
   text-align: left;
 }
-.contact-container a:visited,
-.contact-container a:link{
+.house-contact a:visited,
+.house-contact a:link{
   text-decoration: none;
   color: #777;
 }
-.contact-container li{
+.house-contact li{
   list-style-type: none;
   display: block;
   font-size: 2rem;
   padding: 1rem;
 }
-.contact-container span{
+.house-contact span{
   color: #777;
   font-weight: 300;
   margin-left: 2rem;
 }
 .fas, .fab{
   color: var(--main-green);
+}
+.house-discreption {
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: var(--Ligt-Grey);
+  padding: 3rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
 }
 .house-discreption h2{
   text-align: center;
@@ -148,19 +177,13 @@ body{
   content: "";
   display: block;
   height: .2rem;
-  width: 10%;
+  width: 5%;
   margin: 0 auto;
   background-color: var(--main-green);
 }
-.house-discreption div{
-  width: 100%;
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 8rem;
-  font-size: 1.6rem;
-}
+
 .gallery{
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 .house-gallery{
   /* max-width: 120rem;
@@ -175,7 +198,7 @@ body{
 }
 .gallery h2{
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
 }
 .gallery h2::after{
@@ -185,5 +208,70 @@ body{
   width: 5%;
   margin: 0 auto;
   background-color: var(--main-green);
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sidenavi wrapper */
+#sideNavi,
+.side-navi-item,
+.side-navi-data,
+.side-navi-tab {  margin: 0; padding: 0;  }
+#sideNavi {
+    position: fixed;
+    right: 50px;
+    top: 25%;
+}
+/* items */
+.side-navi-item-default {
+    height: 50px;
+    display: none;
+}
+.side-navi-item {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 15rem;
+    height: 50px;
+    transform: rotate(-90deg);
+    transform-origin:  left top 0;
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    background-color: var(--main-green);
+    cursor: pointer;
+}
+.side-navi-item.item1 {  top: 180px;}
+.side-navi-item.active,
+.side-navi-item:hover {  background-color: #e5e5e5; color: #000;  }
+.side-navi-item > div {  padding-top: 15px; text-align: center;  }
+/* data wrapper */
+.side-navi-data {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 400px;
+    height: 400px;
+    background-color: #e5e5e5;
+}
+/* tab wrapper */
+.side-navi-tab {  display: none;  }
+.side-navi-tab.active {  display: inline-block;  }
+.side-navi-tab > div {  padding: 30px;  }
